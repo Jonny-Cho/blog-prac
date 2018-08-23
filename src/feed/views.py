@@ -2,7 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    pass
+    name = "Jonny"
+    return render(request, "index.html", {"name" : name})
 
 def detail(request):
     pass
