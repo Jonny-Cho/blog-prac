@@ -1,9 +1,10 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 def index(request):
-    name = "Jonny"
-    return render(request, "index.html", {"name" : name})
+    ctx = {}
+    return render(request, "index.html", ctx)
 
 def detail(request):
     pass
